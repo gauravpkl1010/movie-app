@@ -6,8 +6,8 @@ import MovieCard from "./components/MovieCard";
 import { useDebounce } from "react-use";
 import { updateSearchCount } from "./appwrite";
 const API_BASE_URL = "https://api.themoviedb.org/3";
-const API_KEY =
-  "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1YWU0MjViNmQ3YmY0NzU0NTA5NDQyNmRhNWEyOGU4MiIsIm5iZiI6MTczNzk4MjM2Ny4yNDg5OTk4LCJzdWIiOiI2Nzk3ODE5ZmE2ZTQxMjgzZjEyYjM4ODgiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.tNrMDXDuER20S6C-7kVwlFZw85thlHeKsok9PmFU2as";
+const API_KEY = import.meta.env.API_KEY;
+
 const API_OPTIONS = {
   method: "GET",
   headers: {
